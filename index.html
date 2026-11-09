@@ -448,6 +448,29 @@
             50% { transform: scaleY(1); }
         }
 
+        /* Sección Final: Adquisición de Membresía */
+        .membership-cta {
+            text-align: center;
+            padding: 90px 20px 80px;
+            background: radial-gradient(ellipse at center, #0d0d0d 0%, #000 80%);
+            border-top: 1px solid #1a1a1a;
+            position: relative;
+            overflow: hidden;
+        }
+        .membership-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+        }
+        .membership-cta .intro-text {
+            margin-bottom: 30px;
+        }
+
         @media (max-width: 768px) {
             header h1 { font-size: 2.5em; }
             header h2 { font-size: 1.2em; }
@@ -461,6 +484,7 @@
             .link-divider { display: none; }
             .membership-links { flex-direction: column; gap: 15px; }
             .membership-link { width: 100%; justify-content: center; }
+            .membership-cta { padding: 60px 20px 50px; }
         }
 
     </style>
@@ -730,6 +754,16 @@
             <!-- Enlace: Instrumentación del Canal Institucional -->
             <a href="https://instrumentporcada.netlify.app/" target="_blank" data-es="Instrumentación del Canal Institucional" data-en="Institutional Channel Structuring" data-ru="Структурирование институционального канала" data-zh="机构渠道构建">Instrumentación del Canal Institucional</a>
         </div>
+    </div>
+
+    <!-- Sección Final: Adquisición de Membresía -->
+    <div class="membership-cta">
+        <h2 class="section-title" data-es="El Umbral de la Membresía" data-en="The Threshold of Membership" data-ru="Порог Членства" data-zh="会员之门槛">El Umbral de la Membresía</h2>
+        <div class="divider"></div>
+        <p class="intro-text" data-es="Para aquellos elegidos que deseen formalizar su adhesión al círculo más selecto de La Porcada, les invitamos a completar el proceso confidencial de adquisición de su membresía." data-en="For those chosen ones wishing to formalize their admission to the most select circle of La Porcada, we invite you to complete the confidential membership acquisition process." data-ru="Для избранных, желающих официально присоединиться к самому закрытому кругу Ла Поркада, мы приглашаем завершить конфиденциальную процедуру приобретения членства." data-zh="对于希望正式加入拉波尔卡达最精英圈层的天选之人，我们邀请您完成保密的会员获取流程。">
+            Para aquellos elegidos que deseen formalizar su adhesión al círculo más selecto de La Porcada, les invitamos a completar el proceso confidencial de adquisición de su membresía.
+        </p>
+        <a href="https://ventamem.netlify.app/" target="_blank" rel="noopener" class="cta-button" data-es="Adquirir Membresía" data-en="Acquire Membership" data-ru="Приобрести Членство" data-zh="获取会员资格">Adquirir Membresía</a>
     </div>
 
     <!-- Footer -->
