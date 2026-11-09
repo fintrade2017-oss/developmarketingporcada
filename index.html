@@ -470,6 +470,13 @@
         .membership-cta .intro-text {
             margin-bottom: 30px;
         }
+        .membership-cta-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
 
         @media (max-width: 768px) {
             header h1 { font-size: 2.5em; }
@@ -485,6 +492,7 @@
             .membership-links { flex-direction: column; gap: 15px; }
             .membership-link { width: 100%; justify-content: center; }
             .membership-cta { padding: 60px 20px 50px; }
+            .membership-cta-buttons { flex-direction: column; gap: 20px; }
         }
 
     </style>
@@ -739,23 +747,6 @@
         <a href="https://porcada-sactuary-web.netlify.app/" target="_blank" class="cta-button" data-es="Entrar al Santuario" data-en="Enter the Sanctuary" data-ru="Войти в Святилище" data-zh="进入圣殿">Entrar al Santuario</a>
     </div>
 
-    <!-- Recursos Confidenciales -->
-    <div class="resources-section">
-        <p class="resources-title" data-es="Recursos Confidenciales" data-en="Confidential Resources" data-ru="Конфиденциальные ресурсы" data-zh="机密资源">Recursos Confidenciales</p>
-        <div class="resources-links">
-            <a href="https://cltporcadanew.netlify.app/" target="_blank" data-es="Datos Técnicos y Financieros" data-en="Technical & Financial Data" data-ru="Технические и финансовые данные" data-zh="技术与财务数据">Datos Técnicos y Financieros</a>
-            <span class="link-divider">·</span>
-            <!-- Enlace al área de Desarrollo -->
-            <a href="https://desarrolloporcada.netlify.app/" target="_blank" data-es="Desarrollo y Ejecución del Proyecto" data-en="Project Development & Execution" data-ru="Разработка и реализация проекта" data-zh="项目开发与执行">Desarrollo y Ejecución del Proyecto</a>
-            <span class="link-divider">·</span>
-            <!-- Enlace: Análisis de Mercado y Competencia -->
-            <a href="https://competenciainternacional.netlify.app/" target="_blank" data-es="Análisis de Mercado y Competencia" data-en="Market & Competition Analysis" data-ru="Анализ рынка и конкурентов" data-zh="市场与竞争分析">Análisis de Mercado y Competencia</a>
-            <span class="link-divider">·</span>
-            <!-- Enlace: Instrumentación del Canal Institucional -->
-            <a href="https://instrumentporcada.netlify.app/" target="_blank" data-es="Instrumentación del Canal Institucional" data-en="Institutional Channel Structuring" data-ru="Структурирование институционального канала" data-zh="机构渠道构建">Instrumentación del Canal Institucional</a>
-        </div>
-    </div>
-
     <!-- Sección Final: Adquisición de Membresía -->
     <div class="membership-cta">
         <h2 class="section-title" data-es="El Umbral de la Membresía" data-en="The Threshold of Membership" data-ru="Порог Членства" data-zh="会员之门槛">El Umbral de la Membresía</h2>
@@ -763,7 +754,10 @@
         <p class="intro-text" data-es="Para aquellos elegidos que deseen formalizar su adhesión al círculo más selecto de La Porcada, les invitamos a completar el proceso confidencial de adquisición de su membresía." data-en="For those chosen ones wishing to formalize their admission to the most select circle of La Porcada, we invite you to complete the confidential membership acquisition process." data-ru="Для избранных, желающих официально присоединиться к самому закрытому кругу Ла Поркада, мы приглашаем завершить конфиденциальную процедуру приобретения членства." data-zh="对于希望正式加入拉波尔卡达最精英圈层的天选之人，我们邀请您完成保密的会员获取流程。">
             Para aquellos elegidos que deseen formalizar su adhesión al círculo más selecto de La Porcada, les invitamos a completar el proceso confidencial de adquisición de su membresía.
         </p>
-        <a href="https://ventamem.netlify.app/" target="_blank" rel="noopener" class="cta-button" data-es="Adquirir Membresía" data-en="Acquire Membership" data-ru="Приобрести Членство" data-zh="获取会员资格">Adquirir Membresía</a>
+        <div class="membership-cta-buttons">
+            <a href="https://ventamem.netlify.app/" target="_blank" rel="noopener" class="cta-button" data-es="Adquirir Membresía" data-en="Acquire Membership" data-ru="Приобрести Членство" data-zh="获取会员资格">Adquirir Membresía</a>
+            <a href="https://instrumentporcada.netlify.app/" target="_blank" rel="noopener" class="cta-button" data-es="Instrumentación Institucional" data-en="Institutional Structuring" data-ru="Институциональная структура" data-zh="机构构建">Instrumentación Institucional</a>
+        </div>
     </div>
 
     <!-- Footer -->
